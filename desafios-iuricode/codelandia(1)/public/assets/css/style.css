@@ -1,0 +1,158 @@
+/* Variáveis */
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+  
+    --title: #313131;
+    --text: #B6B6B6;
+    
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+body {
+    background: #F0F0F0;
+}
+
+
+/* FONTES */
+@font-face {
+    font-family: 'Lexend Deca';
+    src: local('Lexend Deca'),
+    url('./../fontes/LexendDeca-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    src: local(Inter),url('./../fontes/Inter-Medium.ttf');
+}
+
+/* ESTILOS GERAIS */
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 630px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* HEADER */
+#header {
+    background: var(--linear);
+    padding: 3em 0;
+}
+
+#header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 3em;
+}
+
+#header-nav p, #header-nav h1 {
+    font: normal 400 1.5em/1.5 'Lexend Deca';
+    color: var(--white);
+}
+
+#header #input-search {
+    background: rgba(255, 255, 255, .2);
+
+    display: flex;
+    align-items: center;
+    
+    padding: .5em .875em;
+    border-radius: .25em;
+}
+
+#header #input-search .icon-input {
+    width: 25px;
+}
+
+#header #input-search form  {
+    width: 100%;
+}
+
+#header #input-search form input {
+    width: 100%;
+    padding: .625em;
+    
+    border: none;
+    background: none;
+    
+    color: var(--white);
+    opacity: .8;
+    font: normal 400 1.125em/1.5 'Lexend Deca';
+}
+
+::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: .6;
+    font-family: 'Lexend Deca';
+}
+
+/* MAIN ====== ======  */
+#main {
+    margin: 4em 0;
+}
+
+#main article {
+    background-color: var(--white);
+
+    padding: 1.5em;
+    margin-bottom: 2em;
+
+    border-radius: .25em;
+    box-shadow: 0px 4px 8px #e2e2e2;
+}
+
+#main article .info-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main article .info-article small {
+    font: normal 400 .875em 'Lexend Deca';
+    color: var(--text)
+}
+
+#main article h2 {
+    font: normal 400 1.6em/1.5 'Lexend Deca';
+    color: var(--title);
+}
+
+#main article p {
+    font: normal 400 1em/1.75 'Lexend Deca';
+    color: var(--text);
+    margin-top: .625em;
+}
