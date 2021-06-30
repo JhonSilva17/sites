@@ -241,7 +241,7 @@ h2 {
     flex: 1;  
 }
 
-@media (max-width: 460px) {
+@media (max-width: 370px) {
     #main {
         background: url('./../assets/images/bg-intro-mobile.svg') no-repeat 0;
         background-position-y: 0px;
