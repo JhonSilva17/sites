@@ -4,7 +4,7 @@
 
 ## :rocket: Resultado - Desktop
 
-<img width='520px' src="./public/assets/images/toReadme/easybank-desktop.gif">
+<img width='560px' src="./public/assets/images/toReadme/easybank-desktop.gif">
 
 
 ## :link: Como contribuir 
