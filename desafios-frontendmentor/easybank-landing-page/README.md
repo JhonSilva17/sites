@@ -4,4 +4,4 @@
 
 ## Resultado - Desktop
 
-<img width='460px' align="center" src="./public/assets/images/toReadme/easybank-desktop.gif">
+<img width='520px' src="./public/assets/images/toReadme/easybank-desktop.gif">
