@@ -21,7 +21,7 @@ Treinar minhas habilidades em CSS e usar os conceitos, na prática, de CSS Grid 
 
 
 <p align="center">
-    <img width="460px" align="center" src="./public/toReadme/mygallery-mobile.gif">
+    <img width="460px" align="center" src="./public/toReadme/mygallery-mobile.jpeg">
 </p>
 
 
