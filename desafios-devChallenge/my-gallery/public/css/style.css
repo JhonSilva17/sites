@@ -20,7 +20,7 @@ html,body, span, div, img, p, a, section {
 }
 
 .container {
-    max-width: 840px;
+    max-width: 640px;
     margin: 7.2rem auto 0;
 }
 
