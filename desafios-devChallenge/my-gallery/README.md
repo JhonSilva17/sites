@@ -20,6 +20,11 @@ Treinar minhas habilidades em CSS e usar os conceitos, na prática, de CSS Grid 
 ## :iphone: Resultado - Mobile :iphone:
 
 
+<p align="center">
+    <img width="460px" align="center" src="./public/toReadme/mygallery-mobile.gif">
+</p>
+
+
 ## :rocket: Tecnologias Utilizadas 
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias
