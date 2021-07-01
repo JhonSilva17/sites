@@ -7,6 +7,8 @@ ___
 
 Desafio feito pela [DevChallenges.io](https://devchallenges.io), um site de fotos com o layout de rede social.
 
+Veja o site ao vivo: [My Gallery](https://gallery-john.netlify.app)
+
 ## :interrobang: Motivo
 
 Treinar minhas habilidades em CSS e usar os conceitos, na prática, de CSS Grid Layout.
