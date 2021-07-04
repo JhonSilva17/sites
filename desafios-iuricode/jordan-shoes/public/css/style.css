@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input {
+  border: 0;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url("./../fontes/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url("./../fontes/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat Semi-Bold';
+  src: url("./../fontes/Montserrat-SemiBold.ttf");
+  font-weight: 500;
+}
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.info {
+  background: #181818;
+  padding: 1em 0;
+}
+
+.info p {
+  font: normal 600 1em/1.5 'Montserrat Medium';
+  color: #fff;
+  text-align: center;
+  font-size: .875em;
+}
+
+header {
+  background: #fff;
+  padding: 1em 0;
+}
+
+header .container a {
+  display: block;
+  text-align: center;
+  font: normal 600 1em/1.5 'Montserrat Medium';
+  color: #181818;
+  font-size: 2em;
+}
+
+main {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5))), url("./../img/wallpaper.jpeg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("./../img/wallpaper.jpeg") no-repeat center;
+  padding: 8em 0;
+}
+
+main h1 {
+  color: #fff;
+  font: normal bold 1em/1.5 'Montserrat Bold';
+  font-size: 3em;
+}
+
+main p {
+  font: normal 500 1em/1.5 'Montserrat Semi-Bold';
+  color: #fff;
+  margin-top: 1em;
+  max-width: 310px;
+  line-height: 2;
+}
+
+#products {
+  margin: 4em 0;
+  text-align: center;
+}
+
+#products h2 {
+  font: normal bold 1em/1.5 'Montserrat Bold';
+  color: #181818;
+  font-size: 2em;
+}
+
+#products p {
+  font: normal 500 1em/1.5 'Montserrat Semi-Bold';
+  color: #474747;
+}
+
+#products #container-products {
+  margin-top: 4em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+#products #container-products .item {
+  background: #ebe9ea;
+  padding: 1.5em;
+  border-radius: .25em;
+}
+
+footer {
+  background: #181818;
+  padding: 1.5em 0;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font: normal 500 1em/1.5 'Montserrat Semi-Bold';
+}
+/*# sourceMappingURL=style.css.map */

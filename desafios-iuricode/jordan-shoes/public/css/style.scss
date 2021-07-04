@@ -1,0 +1,92 @@
+@import 'reset';
+@import 'base';
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.info {
+    background: $title;
+    padding: 1em 0;
+    p {
+        @include font-family('Medium');
+        color: $white;
+        text-align: center;
+        font-size: .875em;
+    }
+}
+
+header {
+    background: $white;
+    padding: 1em 0;
+    .container {
+        a {
+            display: block;
+            text-align: center;
+            @include font-family('Medium');
+            color: $title;
+            font-size: 2em;
+        }
+    }
+}
+
+main {
+    background: 
+    linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5)),
+    url('./../img/wallpaper.jpeg') 
+    no-repeat center;
+    padding: 8em 0;
+    h1 {
+        color: $white;
+        @include font-family('Bold');
+        font-size: 3em;
+    }
+    p {
+        @include font-family('Semibold');
+        color: $white;
+        margin-top: 1em;
+        max-width: 310px;
+        line-height: 2;
+    }
+}
+
+#products {
+    margin: 4em 0;
+    text-align: center;
+    h2 {
+        @include font-family('Bold');
+        color: $title;
+        font-size: 2em;
+    }
+
+    p {
+        @include font-family('Semibold');
+        color: $text;
+    }
+
+    #container-products {
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+
+        .item {
+            background: $bgCard;
+            padding: 1.5em;
+            border-radius: .25em;
+        }
+    }
+}
+
+footer {
+    background: $title;
+    padding: 1.5em 0;
+    p {
+        text-align: center;
+        color: $white;
+        @include font-family('Semibold')
+    }
+}

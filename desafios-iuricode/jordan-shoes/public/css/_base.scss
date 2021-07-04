@@ -1,0 +1,33 @@
+
+$bgSite: #f6f6f6;
+$bgCard: #ebe9ea;
+$white: #fff;
+$title: #181818;
+$text: #474747;
+
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('./../fontes/Montserrat-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('./../fontes/Montserrat-Medium.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Montserrat Semi-Bold';
+    src: url('./../fontes/Montserrat-SemiBold.ttf');
+    font-weight: 500;
+}
+
+@mixin font-family($font) {
+    @if $font == 'Bold' {
+        font: normal bold 1em/1.5 'Montserrat Bold';
+    } @else if $font == 'Medium'{
+        font: normal 600 1em/1.5 'Montserrat Medium';
+    } @else if $font == 'Semibold' {
+        font: normal 500 1em/1.5 'Montserrat Semi-Bold';
+    }
+}
