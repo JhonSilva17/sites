@@ -1,6 +1,6 @@
 <h1 align="center">Social Section Master</h1>
 
-<p align="center" width="360px"><strong>Social Section Master</strong> é uma landing page para uma empresa divulgar suas avaliações online. Layout realizado pelo <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub/social-proof-section-sk5DoHOYD)">frontendmentor.io</a>.</p>
+<p align="center" width="280px"><strong>Social Section Master</strong> é uma landing page para uma empresa divulgar suas avaliações online. Layout realizado pelo <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub/social-proof-section-sk5DoHOYD)">frontendmentor.io</a>.</p>
 
 ## :rocket: Resultado - Desktop
 
