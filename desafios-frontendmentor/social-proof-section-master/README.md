@@ -8,8 +8,9 @@
 
 ## :rocket: Resultado - Mobile
 
-<img width='480px' src="./public/images/toReadme/mobile.gif">
-
+<p align="center">
+    <img width='400px' src="./public/images/toReadme/mobile.gif">
+</p>
 
 ## :link: Como contribuir 
 
