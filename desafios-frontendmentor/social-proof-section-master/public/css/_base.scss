@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.border-radius {
+    border-radius: .25em;
+}
+
+
+
+/* VARIÁVEIS */
+$primary-color:  hsl(300, 43%, 22%);
+$text-gray-dark: hsl(303, 10%, 53%);
+$text-gray-light: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+$pink: hsl(333, 80%, 67%);
+
+// MIXINS
+@mixin font-family($fonte) {
+    @if $fonte == 'text-normal' {
+        font: normal 400 1em/1.5em 'Spartan';
+    }@else if $fonte == 'text-medium' {
+        font: normal 500 1em/1.5em 'Spartan';
+    } @else {
+        font: normal 700 1em/1.5em 'Spartan';
+    }
+}
+@mixin media($valor) {
+    @media (max-width: $valor) {
+        @content;
+    }
+}

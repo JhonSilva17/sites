@@ -1,0 +1,202 @@
+@import 'base';
+
+
+body {
+    background: url('./../images/bg-pattern-bottom-desktop.svg'), url('./../images/bg-pattern-top-desktop.svg') no-repeat;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include media(600px) {
+        background: url('./../images/bg-pattern-bottom-mobile.svg'), url('./../images/bg-pattern-top-mobile.svg') no-repeat;
+        margin: 3em 0em;
+        height:auto;
+    }
+}
+
+#container-geral {
+    max-width: 80%;
+    margin: 0 auto;
+    @include media(600px) {
+        max-width: 90%;
+    }
+
+    #intro {
+        @extend .flex-between;
+        @include media(600px) {
+            flex-direction: column;
+            text-align: center;
+        }
+        #info {
+            flex: 2 ;
+
+            h1 {
+                @include font-family('text-bold');
+                color: $primary-color;  
+                font-size: 3em; 
+                max-width: 320px;
+                line-height: 1;
+
+                @include media(600px) {
+                    max-width: 95%;
+                    font-size: 2.5em
+                }
+            }
+
+            p {
+                @include font-family('text-normal');
+                color: $text-gray-dark;
+                font-size: 1em;
+                margin-top: 1.5em;
+                max-width: 360px;
+            
+                @include media(600px) {
+                    max-width: 100%;
+                    margin: 1em 0 2em;
+                }
+            }
+        }
+
+        #stars {
+          flex: 1 1 160px;
+
+          display: flex;
+          flex-direction: column;
+          @include media(600px) {
+            flex: 1;
+        }
+          .item-stars {
+              width: 320px;
+              background: $text-gray-light;
+              padding: .875em;
+              margin-bottom: 1em;
+
+              @extend .border-radius;
+              @extend .flex-around;
+              align-items: center;
+
+              @include media(600px) {
+                width: 100%;
+                flex-direction: column;
+                padding: .625em;
+              }
+              
+                span {
+                   @include font-family('text-bold');
+                   color: $primary-color;
+                   font-size: .875em;
+
+                   @include media(600px) {
+                       margin-top: .625em;
+                   }
+               }
+                li {
+                    display: inline-block; 
+                }
+
+                &:nth-child(1) {
+                    align-self: flex-start;
+                }
+                &:nth-child(2) {
+                    align-self: center;
+                }
+                &:nth-child(3) {
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+
+    #depoiments {
+        //background: red;
+        margin-top: 4em;
+        height: 35vh;
+
+        @include media(600px) {
+            margin: 2em 0 4em;
+            height: 100vh
+        }
+
+        @extend .flex-between;
+        align-items: flex-start;
+        @include media(600px)  {
+            flex-direction: column;
+        }
+
+        .card {
+            flex: 1 1 calc(100% - 1em);
+            background: $primary-color;
+            padding: 2em;
+            @extend .border-radius;
+            @include media(600px) {
+                padding: 1.5em;
+                flex: 1;
+            }
+
+            .profile-container {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5em;
+
+                img {
+                    border-radius: 50%;
+                    width: 40px;
+                    margin-right: 1em;
+                }
+
+                .name {
+                    @include font-family('text-medium');
+                    color: $white;
+                    display: block;
+                    font-size: 1.125em
+                }
+
+                .job {
+                    @include font-family('text-normal');
+                    color: $pink;
+                    font-size: .75em;
+                }
+            }
+
+            .card-text {
+                p {
+                    @include font-family('text-normal');
+                    color: $text-gray-light;
+                    font-size: .875em;
+                }
+            }
+
+            &:nth-child(1) {
+                align-self: flex-start;
+                @include media(600px) {
+                    align-self: center
+                };
+            }
+            &:nth-child(2) {
+                align-self: center;
+                @include media(600px) {
+                    align-self: flex-start
+                };
+            }
+            &:nth-child(3) {
+                align-self: flex-end;
+                @include media(600px) {
+                    align-self: flex-start
+                };
+            }
+        }
+
+        .card + .card {
+            margin-left: 1em;
+
+            @include media(600px) {
+                margin-left: 0;
+                margin-top: 1em
+            };
+        }
+    }
+}
