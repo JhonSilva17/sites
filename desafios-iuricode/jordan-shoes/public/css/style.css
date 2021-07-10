@@ -66,6 +66,12 @@ input:focus {
   margin: 0 auto;
 }
 
+@media (max-width: 600px) {
+  .container {
+    max-width: 85vw;
+  }
+}
+
 .info {
   background: #181818;
   padding: 1em 0;
@@ -91,9 +97,16 @@ header .container a {
   font-size: 2em;
 }
 
+@media (max-width: 420px) {
+  header {
+    padding: .875em;
+  }
+}
+
 main {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5))), url("./../img/wallpaper.jpeg") no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("./../img/wallpaper.jpeg") no-repeat center;
+  background-attachment: fixed;
   padding: 8em 0;
 }
 
@@ -109,6 +122,22 @@ main p {
   margin-top: 1em;
   max-width: 310px;
   line-height: 2;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 6em 0;
+  }
+}
+
+@media (max-width: 420px) {
+  main h1 {
+    font-size: 2.5em;
+  }
+  main p {
+    margin-top: .625em;
+    max-width: 90%;
+  }
 }
 
 #products {
@@ -140,6 +169,59 @@ main p {
   background: #ebe9ea;
   padding: 1.5em;
   border-radius: .25em;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+#products #container-products .item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  #products {
+    margin: 2em 0;
+  }
+  #products h2 {
+    font-size: 2em;
+  }
+  #products #container-products {
+    margin-top: 2em;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  #products #container-products .item:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media (max-width: 420px) {
+  #products {
+    margin: 4em 0;
+    text-align: center;
+  }
+  #products h2 {
+    font: normal bold 1em/1.5 'Montserrat Bold';
+    color: #181818;
+    font-size: 2em;
+  }
+  #products p {
+    font: normal 500 1em/1.5 'Montserrat Semi-Bold';
+    color: #474747;
+  }
+  #products #container-products {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #products #container-products .item {
+    padding: 2em;
+  }
+  #products #container-products .item:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
 }
 
 footer {
