@@ -2,6 +2,8 @@
 
 <p align='center' width="360px">Landing page realizada para um empresa de design de interiores. Desafio realizado pela <a href="https://devchallenges.io">devChallenge.io</a></p>
 
+Veja o resultado ao vivo <a href="https://jhon-interior.netlify.app/">clique aqui!</a>
+
 ##  Resultado - Desktop
 <p align="center" width="360px">
     <img src="./public/img/toReadme/desktop.png">
