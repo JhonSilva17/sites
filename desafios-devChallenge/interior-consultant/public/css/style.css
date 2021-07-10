@@ -287,10 +287,11 @@ main .image .card {
 
 @media (min-width: 720px) {
   main .image .card {
-    max-width: 60%;
+    max-width: 70%;
     padding: 1.5rem;
     -webkit-box-shadow: 0 0 10px #0e0202;
             box-shadow: 0 0 10px #0e0202;
+    left: 30px;
   }
 }
 

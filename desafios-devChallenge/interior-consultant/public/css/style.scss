@@ -191,9 +191,10 @@ main {
             border-radius: .25rem;
             box-shadow: 0 0 6px rgb(0, 0, 0);
             @include media(720px) {
-                max-width: 60%;
+                max-width: 70%;
                 padding: 1.5rem;
                 box-shadow: 0 0 10px rgb(14, 2, 2);
+                left: 30px; 
             }
 
             .card-profile {
