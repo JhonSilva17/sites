@@ -1,0 +1,54 @@
+/* VARIÁVEIS */
+$body-color: hsla(270, 4%, 9%, 1);
+$text-color: hsla(0, 0%, 100%, 1); 
+$text-color-alt: hsla(0, 0%, 60%, 1); 
+$footer-text-color: hsla(0, 0%, 66%, 1);
+
+/* CSS - RESET */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CSS - CLASSES GERAIS */
+body {
+    background-color: $body-color;
+    color: $text-color;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* MIXINS */
+@mixin font-family($font, $size, $wheight) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $wheight;
+}
+
+@mixin media($size) {
+    @media (min-width: $size) {
+        @content
+    }
+}

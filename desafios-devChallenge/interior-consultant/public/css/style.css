@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* VARIÁVEIS */
+/* CSS - RESET */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CSS - CLASSES GERAIS */
+body {
+  background-color: #171618;
+  color: white;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* MIXINS */
+/* ===== header ===== */
+@media (min-width: 720px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+header {
+  padding-top: 1.18rem;
+}
+
+@media (min-width: 720px) {
+  header {
+    padding: 2.5rem 0;
+  }
+  header .icon-menu {
+    display: none;
+  }
+}
+
+header .branding span {
+  border: 1px solid white;
+  padding: .625rem;
+}
+
+@media (min-width: 720px) {
+  header .branding span {
+    padding: .875rem 1rem;
+  }
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 720px) {
+  header .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+header nav ul {
+  position: absolute;
+  inset: 0;
+  z-index: 1001;
+  background-color: #171618;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.15s cubic-bezier(0.57, 0.97, 0.99, 0.65);
+  transition: all 0.15s cubic-bezier(0.57, 0.97, 0.99, 0.65);
+}
+
+@media (min-width: 720px) {
+  header nav ul {
+    position: static;
+    background: none;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  header nav ul li {
+    display: inline-block;
+  }
+  header nav ul li + li {
+    margin-left: 2rem;
+  }
+}
+
+header nav a {
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #999999;
+  display: inline-block;
+  margin-bottom: 2rem;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+@media (min-width: 720px) {
+  header nav a {
+    margin-bottom: 0;
+  }
+}
+
+header nav a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  border-radius: .25rem;
+  background: white;
+  margin: .5rem 0;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+header.show ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+header .icon-close {
+  display: none;
+}
+
+header.show .icon-close {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  z-index: 1002;
+}
+
+@media (min-width: 720px) {
+  header.show .icon-close {
+    display: none;
+  }
+}
+
+main {
+  margin-top: 2rem;
+}
+
+@media (min-width: 720px) {
+  main {
+    margin-top: 4rem;
+  }
+  main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+}
+
+main .content {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 720px) {
+  main .content {
+    margin-bottom: 4rem;
+    max-width: 45%;
+  }
+}
+
+main .content h1 {
+  font-family: "Lora";
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+@media (min-width: 720px) {
+  main .content h1 {
+    font-size: 3rem;
+  }
+}
+
+main .content p {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+@media (min-width: 720px) {
+  main .content p {
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+  }
+}
+
+main .content a.button {
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content a.button span {
+  margin-left: 1rem;
+  font-size: 1.75rem;
+}
+
+@media (min-width: 720px) {
+  main .image {
+    width: 95%;
+  }
+}
+
+main .image .card {
+  background: #171618;
+  position: relative;
+  bottom: 50px;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 0 6px black;
+          box-shadow: 0 0 6px black;
+}
+
+@media (min-width: 720px) {
+  main .image .card {
+    max-width: 60%;
+    padding: 1.5rem;
+    -webkit-box-shadow: 0 0 10px #0e0202;
+            box-shadow: 0 0 10px #0e0202;
+  }
+}
+
+main .image .card .card-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .625rem;
+  margin-bottom: 1rem;
+}
+
+main .image .card .card-profile img {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  width: 2.75rem;
+}
+
+main .image .card .card-profile .content-user p {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+@media (min-width: 720px) {
+  main .image .card .card-profile .content-user p {
+    font-size: 1rem;
+  }
+}
+
+main .image .card .card-profile .content-user small {
+  font-family: "Montserrat";
+  font-size: 0.625rem;
+  font-weight: 400;
+  opacity: .7;
+}
+
+@media (min-width: 720px) {
+  main .image .card .card-profile .content-user small {
+    font-size: .875rem;
+  }
+}
+
+main .image .card p {
+  font-family: "Lora";
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (min-width: 720px) {
+  main .image .card p {
+    font-size: 1.25rem;
+  }
+}
+
+footer p {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+@media (min-width: 720px) {
+  footer p {
+    margin-top: 4rem;
+  }
+}
+
+footer p a {
+  color: #999999;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
