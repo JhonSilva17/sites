@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--ICONS-FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--STYLES-->
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SPLI<br>TTER</h1>
+    </header>
+
+    <main>
+        <section class="calc-input">
+            <div id="bill">
+                <form action="">
+                    <label for="billInput">Bill</label>
+                    <span class="error">Can't be zero</span>
+                    <div class="input">
+                        <i class="fas fa-dollar-sign"></i>
+                        <input type="number" id="billInput" name="billInput" placeholder="0" autocomplete="off" min="0">
+                    </div> <!--INPUT-->
+                </form> <!--FORM-->
+            </div> <!--BILL-->
+            <div id="number-people">
+                <form action="">
+                    <label for="people">Number of People</label>
+                    <div class="input">
+                        <i class="fas fa-user"></i>
+                        <input type="number" id="people" name="people" placeholder="0" autocomplete="off" min="0">
+                    </div> <!--INPUT-->
+                </form> <!--FORM-->
+            </div> <!--NUMBER-PEOPLE-->
+
+            <div id="select-tip">
+                <p class="label">Select Tip <i class="fas fa-percent"></i></p>
+                <div class="container-buttons">
+                    <button class="button" value="5">5%</button>
+                    <button class="button" value="10">10%</button>
+                    <button class="button" value="15">15%</button>
+                    <button class="button" value="25">25%</button>
+                    <button class="button" value="50">50%</button>
+                    <input type="number" class="button" id="inputCustom" placeholder="Custom" autocomplete="off" min="0" title="Clique sobre o campo para ser calculado">
+                </div>
+            </div> <!--SELECT-TIP-->
+        </section> <!--CALC-INPUT-->
+        
+        <section class="calc-output">
+            <div class="items-container">
+                <div class="amount">
+                    <div class="amount-about">
+                        <p>Tip Amount</p>
+                        <small>/ person</small>
+                    </div> <!--AMOUNT-ABOUT-->
+                    <div class="res res-amount">R$ 0,00</div> <!--RES-AMOUNT-->
+                </div> <!--AMOUNT-->
+                <div class="person">
+                    <div class="person-about">
+                        <p>Total</p>
+                        <small>/ person</small>
+                    </div> <!--AMOUNT-ABOUT-->
+                    <div class="res res-person">R$ 0,00</div> <!--RES-AMOUNT-->
+                </div> <!--AMOUNT-->
+            </div>
+            <button class="reset">RESET</button>
+        </section> <!--CALC-OUTPUT-->
+    </main>
+    
+
+    <script src="./public/js/script.js"></script>
+</body>
+</html>

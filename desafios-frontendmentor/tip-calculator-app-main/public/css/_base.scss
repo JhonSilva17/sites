@@ -1,0 +1,103 @@
+// Variáveis
+$hue: 185;
+$primary-color: hsl($hue, 100%, 15%);
+$secondary-color: hsl($hue, 14%, 43%); 
+$body-color:  hsl($hue, 41%, 84%);
+$white: hsl($hue, 0%, 100%);
+$text-color: hsl($hue, 14%, 56%);
+$button-color: hsl($hue, 100%, 15%);
+$button-color-hover: hsl(172, 67%, 45%);
+$background-input: hsl($hue, 41%, 97%);
+$strong-color: hsl($hue, 55%, 46%);
+$color-error: hsl(345, 80%, 60%);
+
+// Mixins 
+@mixin font-size($size) {
+    @if $size == "12px" {
+        font-size: .75rem;
+    } @else if $size == '14px' {
+        font-size: .874rem;
+    } @else if $size == '16px' {
+        font-size: 1rem;
+    } @else if $size == '18px' {
+        font-size: 1.125rem;
+    } @else if $size == '24px' {
+        font-size: 1.5rem;
+    } @else if $size == '32px' {
+        font-size: 2rem;
+    } @else if $size == '48px' {
+        font-size: 3rem;
+    }
+}
+@mixin media($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+// Geral
+:root {
+    font-size: 16px;
+}
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: $body-color;
+    font-smooth: antialiezed;
+}
+::-webkit-input-placeholder, button, input {
+    font-family: 'Space Mono', monospace;
+}
+
+// classes 
+.button, #inputCustom {
+     @include font-size('18px');
+     text-align: center;
+    @extend .border-radius;
+    padding: .625rem 0;
+    background: $button-color;
+    color: $white;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 700;
+    @include media(1024px) {
+        @include font-size('24px');
+        padding: 1rem 0;
+    }
+    &:hover {
+        background: $strong-color;
+        color: $primary-color;
+    }
+}
+
+.error {
+    color: $color-error;
+    @include font-size(('12px'));
+    float: right;
+    display: none;
+}
+.button.ativo {
+    background:$button-color-hover;
+    color: $primary-color;
+}
+
+.border-radius {
+    border-radius: .25rem;
+}
+
