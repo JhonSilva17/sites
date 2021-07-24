@@ -1,0 +1,44 @@
+/* == == TEXT-EDITOR == == */
+.text-editor {
+    margin: 6.4rem 0;
+    @include media(767px) {
+        margin: 3.2rem 0
+    }
+ 
+    .container {
+        @extend .flex-between;
+        gap: 6.4rem;
+        @include media(767px) {
+            flex-direction: column-reverse;
+            gap: 3.2rem;
+        }
+    }
+
+    .editor-image {
+        width: 50%;
+        @include media(767px) {
+            width: 100%;   
+        }
+        
+    }
+    .editor-content {
+        width: 50%;
+        @include media(767px) {
+            width: 100%;
+
+            a {
+                font-size: 2rem;
+            }
+        }
+        
+        p {
+            margin: 2rem 0;
+            max-width: 50rem;
+            @include media(767px) {
+                max-width: 100%;
+                font-size: 1.8rem;
+                margin: 1rem 0;
+            }
+        }
+    }
+}

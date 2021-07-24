@@ -1,0 +1,48 @@
+/* == == FOOTER == == */
+footer {
+    background: $color-primary;
+    padding: 3.2rem 0;
+     .container {
+         display: flex;
+         justify-content: space-between;
+         gap: 3.2rem;
+         flex-wrap: wrap;
+         @include media(540px)  {
+             gap: 1.6rem;
+         }
+     }
+
+    h2 {
+        color: $white;
+        font-size: 2.4rem;
+        line-height: 2;
+    }
+    p, a {
+        font-size: 1.8rem;
+        color: $text-color;
+        line-height: 1.5;
+    }
+    a:hover {
+        color: $white;
+    }
+    .footer-item {
+        flex: 1 1 10%;
+        @include media(540px) {
+            flex: 1 1 30%;
+        }
+    }
+    .footer-item:nth-child(1) {
+        flex: 2 1 20%;
+        
+        p {
+            max-width: 90%;
+        }
+
+        @include media(540px) {
+            flex: 2 1 100%;
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body, input, textarea, button, ::-webkit-input-placeholder {
+    font-family: 'Cabin', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+// Geral
+a {
+    color: $color-primary;
+    transition: all .3s;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: $text-color;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h2 {
+    color: $color-primary;
+    font-size: 4.8rem;
+    @include media(720px) {
+        font-size: 3.8rem;
+    } 
+    @include media(540px) {
+        font-size: 3.2rem;
+    }
+}
+
+// Classes Reusebles
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    @include media(720px) {
+        max-width: 90%;
+    }
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-intro {
+    background-color: $bg-intro;
+    padding: 4.8rem 0;
+    @include media(720px) {
+        padding: 3.2rem 0;
+    }
+}
+
+.bg-black {
+    background: $color-primary;
+    color: $white;
+    &:hover {
+        background-color: $button-hover;   
+    }   
+}
+
+.icon {
+    visibility: hidden;
+    opacity: 0; 
+    width: 20px;
+    cursor: pointer;
+    @include media(540px) {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.button {
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding: 1.6rem 2.2rem;
+    @extend .border-radius;
+    cursor: pointer;
+    transition: .3s;
+    @include media (720px) {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+.border-radius {
+    border-radius: .4rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.link-arrow {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: $text-color;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+    @include media(720px) {
+        font-size: 2rem;
+    }
+}

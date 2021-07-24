@@ -3,6 +3,17 @@
 O Codelândia Blog, foi um desafio para treinar habilidades com criação de layouts, usando HTML e CSS.
 O desafio foi feito por um servidor no Discord, criado pelo [@IuriCode](https://bio-iuricode.vercel.app)
 
+Veja o projeto online - [Clique aqui](https://codelandia-devjohn.netlify.appp)
+
+
+## Resultado - Desktop
+
+<img src="./public/assets/imgs/readme/desktop.png" width="560px">
+
+## Resultado - Mobile
+
+<img src="./public/assets/imgs/readme/mobile.png" width="560px">
+
 
 ## :link: Mais informações
 

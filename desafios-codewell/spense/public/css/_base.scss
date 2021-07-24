@@ -1,0 +1,16 @@
+$color-primary: hsl(240, 20%, 5%);
+$button-hover: hsl(240, 7%, 31%);
+$text-color: hsl(240, 6%, 50%);
+$bg-intro: hsl(43, 15%, 92%);
+$white: hsl(0, 0%, 100%);
+$color-border: hsl(240, 7%, 55%);
+$bg-menu: hsl(0, 0%, 96%);
+$gap-section: 6.4rem;
+
+
+// Mixins
+@mixin media($value) {
+    @media (max-width: $value) {
+        @content ;
+    }
+}
