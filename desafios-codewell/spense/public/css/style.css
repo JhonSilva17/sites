@@ -1,3 +1,23 @@
+.modal {
+  background: #0a0a0f;
+  padding: 1.6rem 0;
+  text-align: center;
+}
+
+.modal p {
+  color: white;
+}
+
+.modal p span {
+  text-decoration: underline;
+}
+
+@media (max-width: 546px) {
+  .modal p {
+    font-size: 1.6rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

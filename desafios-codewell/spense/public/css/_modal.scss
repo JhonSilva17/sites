@@ -1,0 +1,14 @@
+.modal {
+    background: $color-primary;
+    padding: 1.6rem 0;
+    text-align: center;
+    p {
+        color: $white;
+        span {
+            text-decoration: underline;
+        }
+        @include media(546px) {
+            font-size: 1.6rem;
+        }
+    }
+}
