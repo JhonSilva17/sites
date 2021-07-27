@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    --green: #04c35c;
+    --blue: #2b6cb0;
+  
+    --white: #ffffff;
+    --white300: #f7fafc;
+  
+    --dark: #1a202c;
+    --input: #e8e8e8;
+    --input-focus: #72aff0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+body, input, button, label {
+    font-family: 'Lato', sans-serif;
+}
+
+button, input {
+    outline: none;
+    border: none;
+}
+
+input {
+    border: 1px solid var(--input);
+}
+
+input:focus {
+    border-color: var(--input-focus);
+}
+
+/* STYLES */
+.container-geral {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 100vh;
+}
+
+@media screen and (max-width: 750px) {
+    .container-geral {
+        grid-template-columns: auto;
+    }
+}
+
+/* GERAL IMAGE */
+.geral-image {
+    padding: 12.8rem;
+    background-color: var(--white300);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+    .geral-image {
+        padding: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .geral-image {
+        display: none;
+    }
+}
+
+/* MAIN */
+main.geral-form {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: min(400px, 90%);
+    margin: 0 auto;
+}
+
+main.geral-form header {
+    margin-bottom: 2rem;
+}
+
+main.geral-form header p {
+    font: bold 1.8rem/1.4 'Merriweather', serif;
+}
+
+main.geral-form header h1 {
+    font: bold 3.8rem 'Merriweather', serif;
+}
+
+@media screen and (max-width: 750px) {
+    main.geral-form header p {
+        font-size: 1.6rem;
+    }
+    
+    main.geral-form header h1 {
+        font-size: 3.2rem;
+    }
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-container label {
+    font-size: 2rem;
+    font-weight: 500;
+    display: block;
+    line-height: 2;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 1.4rem;
+    border-radius: .4rem;
+}
+
+form .input + .input {
+    margin-top:  1.6rem;
+}
+
+form .input-radio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    margin: 3.2rem 0;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-radio input {
+    width: auto;
+    padding: 0;
+}
+
+.input-radio label {
+    display: inline-block;
+    line-height: 1;
+}
+
+.input-radio a {
+    font-size: 1.8rem;
+    color: var(--blue);
+}
+
+.buttons .btn {
+    width: 100%;
+    text-align: center;
+    padding: 1.6rem 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
+
+.btn-green {
+    background-color: var(--green);
+}
+
+.btn-black {
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-black img {
+    display: inline-block;
+    width: 3.2rem;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    bottom: 2.6rem;
+}
+
+footer p {
+    font-size: 1.8rem;
+}
+
+footer p a {
+    color: var(--blue);
+}

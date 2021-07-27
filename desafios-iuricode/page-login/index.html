@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage.</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    
+    <div class="container-geral">
+        <div class="geral-image">
+            <img src="./public/image/image.svg" alt="Ilustração que representa uma interface de um dispositivo móvel, com ícones de pessoas usando roupas verde limão.">
+        </div> <!--GERAL-IMAGE-->
+
+        <main class="geral-form">
+            <header id="header-form">
+                <p>Bem vindo de volta</p>
+                <h1>Faça login na sua conta</h1>
+            </header> <!--HEADER-->
+
+            <section class="form-container">
+                <form>
+                    <div class="input input-email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="name@gmail.com">
+                    </div> <!--INPUT-EMAIL-->
+
+                    <div class="input input-password">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password">
+                    </div> <!--INPUT-PASSWORD-->
+
+                    <div class="input-radio">
+                        <div class="radio">
+                            <input type="radio" name="remember" id="remember">
+                            <label for="remember">Lembre de mim</label>
+                        </div> <!--INPUT-RADIO-->
+                        <div class="link"><a href="#">Esqueceu sua senha?</a></div>
+                    </div> <!--INPUT-RADIO-->
+
+                    <div class="buttons">
+                        <button type="submit" class="btn btn-green">Entrar</button>
+                        <a href="#" class="btn btn-black">
+                            <img src="./public/image/google.svg" alt="Logomarca do Google">
+                            <span>Ou faça login com o Google</span>
+                        </a>
+                    </div> <!--BUTTONS-->
+                </form>
+            </section> <!--FORM-CONTAINER-->
+
+            <footer>
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </footer>
+        </main> <!--GERAL-FORM-->
+    </div> <!--CONTAINER-GERAL-->
+
+</body>
+</html>
