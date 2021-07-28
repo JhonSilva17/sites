@@ -2,7 +2,7 @@
 
 **Unifeed** projeto de blog para testar minhas habilidades em desenvolvimento de layouts usando CSS e SCSS. Desafio realizado pelo site [Codewell](https://www.codewell.cc)
 
-Veja o projeto online - [Clique aqui](https://spense-john.netlify.app)
+Veja o projeto online - [Clique aqui](https://unifeed-codewell-john.netlify.app)
 
 ## :rocket: Resultado - Desktop
 
