@@ -1,0 +1,419 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: .5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #000000;
+  font-weight: 800;
+}
+
+p, small {
+  color: #494949;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff9900;
+  font-weight: bold;
+  border-radius: .4rem;
+}
+
+.icon-close {
+  width: 4.8rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.flex-between, header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+  .profile-user {
+    gap: 2rem;
+  }
+}
+
+.profile-user img {
+  width: 4.8rem;
+}
+
+@media screen and (min-width: 720px) {
+  .profile-user img {
+    width: 5.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile-user img {
+    width: 7.2rem;
+  }
+}
+
+.profile-user .user-content span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: block;
+}
+
+@media screen and (min-width: 720px) {
+  .profile-user .user-content span {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile-user .user-content span {
+    font-size: 2rem;
+  }
+}
+
+.profile-user .user-content small {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #494949;
+}
+
+@media screen and (min-width: 720px) {
+  .profile-user .user-content small {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile-user .user-content small {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  img.image {
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  img.image {
+    height: auto;
+    -o-object-fit: initial;
+       object-fit: initial;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .icon {
+    display: none;
+  }
+}
+
+header {
+  padding: 3.2rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding-bottom: 6.4rem;
+  }
+}
+
+header #navigation {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  background: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: -webkit-transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@media screen and (min-width: 1024px) {
+  header #navigation {
+    position: static;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: none;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+header #navigation.ativo {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+header #navigation ul li {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  header #navigation ul li {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+header #navigation ul li a {
+  font-size: 2.6rem;
+  padding: 1.4rem 3.2rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+@media screen and (min-width: 1024px) {
+  header #navigation ul li a {
+    font-size: 2rem;
+  }
+}
+
+#intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  gap: 1.8rem;
+}
+
+@media screen and (min-width: 720px) {
+  #intro {
+    gap: 2.4rem;
+  }
+  #intro .intro-img img {
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #intro {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    gap: 6.4rem;
+  }
+  #intro .intro-img img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+#intro .intro-content h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 720px) {
+  #intro .intro-content h1 {
+    font-size: 3.6rem;
+    line-height: 1.35;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #intro .intro-content h1 {
+    font-size: 4.2rem;
+  }
+}
+
+#intro .intro-content p {
+  font-size: 1.8rem;
+  margin: 1.8rem 0;
+}
+
+@media screen and (min-width: 720px) {
+  #intro .intro-content p {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #intro .intro-content p {
+    max-width: 80%;
+  }
+}
+
+#intro .intro-content .profile-user {
+  margin: 3.2rem 0;
+}
+
+#articles {
+  margin: 6.4rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  #articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 3.2rem;
+  }
+}
+
+#articles .card + .card {
+  margin-top: 3.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #articles .card + .card {
+    margin-top: 0;
+  }
+}
+
+#articles .card .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#articles .card .content h2 {
+  font-size: 2.8rem;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  #articles .card .content h2 {
+    font-size: 3.4rem;
+    max-width: 80%;
+  }
+}
+
+#articles .card .content p {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #articles .card .content p {
+    font-size: 2.2rem;
+  }
+}
+
+#articles .card .content .profile-user {
+  margin: 3.2rem 0 0;
+}
+
+footer .container {
+  margin: 3.2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .container {
+    margin: 6.4rem auto 3.2rem;
+  }
+}
+
+footer .container .copy p {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .container .copy p {
+    font-size: 1.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

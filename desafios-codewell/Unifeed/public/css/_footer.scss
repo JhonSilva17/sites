@@ -1,0 +1,22 @@
+footer {
+    .container {
+        margin: 3.2rem auto;
+        @include media(1024px) {
+            margin: 6.4rem auto 3.2rem;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .copy {
+            p {
+                font-size: 1.6rem;
+                @include media(1024px) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
