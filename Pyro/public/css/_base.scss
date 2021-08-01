@@ -1,0 +1,39 @@
+
+// Mixins
+@mixin font($size) {
+    line-height: 1.4;
+    @if $size == 14 {
+        font-size: 1.4rem;
+    } @else if $size == 16 {
+        font-size: 1.6rem;
+    } @else if $size == 18 {
+        font-size: 1.8rem;
+    } @else if $size == 24 {
+        font-size: 2.4rem;
+    } @else if $size == 32 {
+        font-size: 3.2rem;
+    } @else if $size == 46 {
+        font-size: 4.6rem;
+    }
+}
+
+@mixin media($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+} 
+
+// Variáveis
+$primary-color: hsl(85, 75%, 60%);
+$dark-primary-color: hsl(85, 80%, 40%);
+$gradient: 
+    linear-gradient(
+        to right,
+        $primary-color,
+        hsl(206, 74%, 58%)
+    );
+$black: hsl(102, 10%, 20%);
+$gray: hsl(0, 0%, 77%);
+$green-low-saturate: hsl(100, 8%, 50%);
+$white: hsl(0, 0%, 100%);
+$width-containers: 60%;

@@ -1,0 +1,37 @@
+#intro {
+    background: url('./../images/banner.jpg') center no-repeat;
+    background-size: cover;
+
+    position: relative;
+
+    @include media(520px)  {
+        display: none;
+    }
+
+    .content {
+        padding: 6.4rem;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        h1 {
+            @include font(46);
+            color: $primary-color;
+        }
+
+        h2 {
+            color: $white;
+            @include font(32)
+        }
+    
+        p {
+            font-family: 'Poppins', sans-serif;
+            @include font(18);
+            color: $white;
+            max-width: 30rem;
+            opacity: .9;
+            margin-top: 1.4rem;
+        }
+    }
+}

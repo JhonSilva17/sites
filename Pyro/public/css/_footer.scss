@@ -1,0 +1,41 @@
+footer {
+    margin: 3.2rem 0;
+    width: $width-containers;
+   
+    .separator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .line {
+            background: $gray;
+            width: calc(30% - 3.2rem);
+            height: 1px;
+            @include media(768px) {
+                width: calc(20% - 2rem);
+            } 
+        }
+        .line-1 {
+            margin-right: 1.6rem;
+        }
+        .line-2 {
+            margin-left: 1.6rem
+        }
+        p {
+            @include font(18);
+            color: $gray;
+            @include media(520px) {
+                @include font(14);
+            }
+        }
+    }
+
+    .media {
+        margin-top: 3.2rem;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3.2rem;
+        }
+    }
+}

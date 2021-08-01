@@ -1,0 +1,81 @@
+main {
+    padding: 3.2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    header {
+        text-align: center;
+        .logo {
+            img {
+                width: 10rem;
+                margin: 0 auto 1rem;
+                @include media(768px) {
+                    width: 9rem
+                } 
+            }
+        }
+       h2 {
+           @include font(32);
+           color: $black;
+       }
+       h3 {
+           @include font(14);
+           font-weight: 500;
+           color: $green-low-saturate;
+
+           a {
+               color: $dark-primary-color;
+           }
+       }
+    }
+
+    #form {
+        width: $width-containers;
+        margin-top: 6.4rem;
+        @include media(768px) {
+            width: 80%;
+            margin-top: 3.2rem;
+        }
+        .input {
+            & + .input {
+                margin-top: 3.2rem;
+            }
+            label {
+                display: block;
+                @include font(18);
+                font-weight: 500;
+                color: $black;
+                @include media(768px) {
+                    @include font(16);
+                }
+            } 
+            input {
+                border-bottom: 2px solid $primary-color;
+                width: 100%;
+                padding: .4rem;
+                color: $dark-primary-color;
+                border-radius: .4rem;
+            }
+         
+        }
+        button {
+            display: block;
+            background: $gradient;
+            width: 20rem;
+            text-align: center;
+            padding: 1.6rem;
+            border-radius: .4rem;
+            color: $white;
+            font-weight: 500;
+            @include font(18);
+            margin: 6.4rem auto 0;
+            cursor: pointer;
+            @include media(768px) {
+                margin-top: 3.2rem;
+            } 
+        }
+    }
+}
