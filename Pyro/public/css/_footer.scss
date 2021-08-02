@@ -36,6 +36,13 @@ footer {
             justify-content: center;
             align-items: center;
             gap: 3.2rem;
+
+            li {
+                transition: transform .3s;
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
         }
     }
 }
