@@ -1,0 +1,90 @@
+/*Variáveis*/
+$bgSite: #d7d4ff;
+$buttonColor: #6c63ff;
+
+$white: #ffffff;
+$white300: #f9f9f9;
+
+$title: #2b2b2b;
+$text: #555555;
+
+// Fontes
+@font-face {
+    font-family: 'Merriweather Bold';
+    src: url('./../assets/fontes/Merriweather-Bold.ttf');
+}
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url('./../assets/fontes/Merriweather-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('./../assets/fontes/Lato-Regular.ttf');
+}
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $white300;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button:focus,
+input:focus {
+    border: 0;
+}
+
+p,
+::-webkit-input-placeholder {
+    line-height: 1.4;
+    color: $text;
+}
+
+h1, h2, h3 {
+    color: $title;
+    line-height: 1.4;
+}
+
+// Classes
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: (0, 0, 0, 0);
+    border-width: 0;
+}
+
+// Mixins 
+@mixin font-family($font) {
+    @if $font == 'title' {
+        font-family: 'Merriweather Bold', Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    } @else if $font == 'subtitle' {
+        font-family: 'Merriweather Regular', Georgia, 'Times New Roman', Times, serif;
+        font-weight: normal;
+    } @else {
+        font-family: 'Lato Regular', sans-serif;
+        font-weight: normal;
+    }
+}
+
+@mixin media($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}

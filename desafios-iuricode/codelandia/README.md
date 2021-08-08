@@ -14,5 +14,4 @@ O desafio foi feito por um servidor no Discord, criado pelo [@IuriCode](https://
 
 ## :link: Mais informações
 
-Veja o resultado do projeto: [Codelândia](
-https://codelandia-devjohn.netlify.app)
+Veja o resultado do projeto: [Codelândia](https://codelandia-devjohn.netlify.app)
