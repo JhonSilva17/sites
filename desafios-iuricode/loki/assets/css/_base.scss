@@ -1,0 +1,112 @@
+/* VARIÁVEIS */
+$white: #fff;
+$color-stars-fill: rgb(255, 217, 0);
+$btn-blue:  hsla(207, 100%, 41%, 1);
+$btn-none: hsla(240, 12%, 8%, 1);
+
+/* CSS RESET */
+:root {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('./../image/fundo.jpg') center no-repeat fixed;
+    background-size: cover;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'B612 Regular';
+    src: url('./../fonts/B612-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'B612 Bold';
+    src: url('./../fonts/B612-Bold.ttf');
+}
+
+
+@mixin font($size) {
+    @if $size == 'text' {
+        font: normal 1.4rem/1.4 'B612 Regular';
+    } @else if $size == 'title' {
+        font: bold 9.6rem/1.4 'B612 Bold';
+    } @else if $size == 'icons' {
+        font: normal 1.6rem/1.4 'B612 Regular';
+    } @else if $size == 'icons-mb' {
+        font: normal 1.4rem/1.4 'B612 Regular';
+    } @else if $size == 'title-mb' {
+        font: bold 7.4rem 'B612 Bold';
+    } 
+}
+
+@mixin media($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+/* CLASSES ÚTEIS */
+.container {
+    max-width: 65%;
+    margin: 0 auto;
+
+    @include media(770px) {
+        max-width: 90%;
+    };
+}
+
+.container-geral {
+    margin-top: 6.4rem;
+    @include media(425px) {
+        margin: 3.2rem 0;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.icon-star {
+    color: gray;
+}
+
+.fill-yellow {
+    color: $color-stars-fill;
+}
+
+a.btn-blue {
+    background: $btn-blue;
+    border: 1px solid transparent;
+}
+
+a.btn-dark {
+    background: $btn-none;
+    border: 1px solid $white;
+}

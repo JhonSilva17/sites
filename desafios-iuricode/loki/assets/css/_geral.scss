@@ -1,0 +1,95 @@
+.container-geral {
+    header {
+        h2 {
+            @include font('text');
+            font-weight: bold;
+            
+        }
+        h2, h1 {
+            text-align: center;
+            color: $white;
+        }
+        h1 {
+            @include font('title');
+            @include media(425px) {
+                @include font('title-mb')
+            }
+        }
+    }
+    
+    main {
+        margin-top: 2rem;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 18rem;
+            gap: 1.6rem;
+
+            @include media(425px) {
+                grid-template-columns: auto;
+                grid-template-rows: 24rem;
+                justify-items: center;
+                gap: 2rem;
+            }
+        }
+
+        .main-image {
+            img {
+                height: 100%;
+            }
+        }
+
+        .main-content {
+            p {
+                color: $white;
+                @include font('text');
+                @include media(425px) {
+                    text-align: center;
+                }
+            }
+
+            .about {
+                
+                margin: 2rem 0;
+                ul {
+                    &.flex {
+                        gap: 10rem;
+                        @include media(425px) {
+                            gap: 3.2rem;
+                            justify-content: center
+                        }
+                    }
+                    li {
+                        @include font('icons');
+                        color: $white; 
+                        @include media(425px) {
+                            @include font('icons-mb');
+                        }
+                    }
+                }
+            }
+
+            .buttons {
+                display: flex;
+                gap: 2rem;
+                text-align: center;
+                a {
+                    color: $white;
+                    @include font('text');
+                    font-size: 1.2rem;
+                }
+
+                a.btn {
+                    padding: .8rem 2rem;
+                    border-radius: .2rem;
+
+                    @include media(425px) {
+                        padding: 1rem;
+                        display: inline-block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
