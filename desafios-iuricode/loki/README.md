@@ -8,7 +8,7 @@ Esse layout foi desenvolvido para fins acadêmicos, especificamente, para treina
 
 ## Resultado - Mobile
 
-<img src="./public/assets/image/readme/mobile.png" width="560px">
+<img src="./assets/image/readme/mobile.png" width="560px">
 
 
 ## :link: Mais informações
